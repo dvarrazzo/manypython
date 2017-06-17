@@ -9,3 +9,14 @@ compiled both in normal and debug mode.
 
 The python installation are available under ``/opt/``, e.g. ``/opt/py27``,
 ``/opt/py35d``, etc.
+
+
+Uploading the images
+--------------------
+
+If the images are modified they can be uploaded with::
+
+    docker login
+    docker -t manypython_i686 manypython_i686
+    docker tag manypython_i686 piro/manypython_i686
+    docker push piro/manypython_i686
